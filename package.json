@@ -1,0 +1,27 @@
+{
+    "name": "spotify-clone",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hieunmps16000/k22-module2-spotify-ui-clone.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/hieunmps16000/k22-module2-spotify-ui-clone/issues"
+    },
+    "homepage": "https://github.com/hieunmps16000/k22-module2-spotify-ui-clone#readme",
+    "devDependencies": {
+        "vite": "^8.3.5"
+    }
+}

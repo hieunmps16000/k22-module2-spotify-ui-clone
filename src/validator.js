@@ -1,4 +1,4 @@
-function Validator(options) {
+export function Validator(options) {
     const formElement = document.querySelector(options.form);
     if (!formElement) {
         console.error(`Validator: ${options.formElement} is not found`);
