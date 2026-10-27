@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<!-- Head -->
+<%- include("../partials/head.ejs", page) %>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <%- include("../partials/header.ejs") %>
+
+        <div class="app-row">
+            <!-- Sidebar -->
+            <%- include("../partials/sidebar.ejs") %>
+
+            <main class="app-col app-list"><%- include("../pages/index.ejs") %></main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
