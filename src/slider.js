@@ -1,11 +1,11 @@
 import { Slidezy } from "./slidezy";
 
-export const initHomeSlider = () => {
-    new Slidezy("#slidezy-trending", {
-        items: 6,
+export const initSlider = () => {
+    new Slidezy("#list-trending", {
+        items: 5,
         nav: false,
         slideBy: 3,
-        loop: true,
+        // loop: true,
     });
 
     new Slidezy("#slidezy-artists", {

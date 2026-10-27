@@ -7,6 +7,7 @@
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
+        "deploy": "vite build && gh-pages -d dist",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -24,5 +25,8 @@
     "devDependencies": {
         "ejs": "^7.0.2",
         "vite": "^8.3.5"
+    },
+    "dependencies": {
+        "gh-pages": "^6.3.0"
     }
 }

@@ -1,15 +1,11 @@
 import { initSidebar } from "./sidebar";
-import { initHomeSlider } from "./homeSlider";
-import * as api from "./api";
+import { initHome } from "./pages/home";
+import { initSlider } from "./slider";
 
-const initApp = () => {
+const initApp = async () => {
     initSidebar();
-    initHomeSlider();
-};
-
-const run = async () => {
-    const data = await api.get("tracks/popular");
-    console.log(data);
+    await initHome();
+    initSlider();
 };
 
 initApp();
