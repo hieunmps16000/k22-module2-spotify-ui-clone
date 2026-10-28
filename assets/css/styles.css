@@ -381,17 +381,10 @@
     display: none;
 }
 
-/* .slidezy-prev-btn,
-.slidezy-next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.home-slider {
+    display: none;
 }
 
-.slidezy-prev-btn {
-    left: 0;
+.home-slider.slidezy-wrapper {
+    display: block;
 }
-
-.slidezy-next-btn {
-    right: 0;
-} */

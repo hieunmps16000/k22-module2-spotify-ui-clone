@@ -22,6 +22,8 @@ export function Slidezy(selector, options = {}) {
         },
         options,
     );
+
+    this.originalHtmls = this.container.innerHTML;
     this.originalSlides = Array.from(this.container.children);
     this.slides = this.originalSlides.slice(0);
     this.currentIndex = this.opt.loop ? this._getCloneCount() : 0;
@@ -223,4 +225,11 @@ Slidezy.prototype._updatePosition = function (instant = false) {
     if (this.opt.nav && !instant) {
         this._updateNav();
     }
+};
+
+Slidezy.prototype.destroy = function () {
+    this.container.innerHTML = this.originalHtmls;
+    this.container.classList.remove("slidezy-wrapper");
+    Object.keys(this).forEach((key) => (this[key] = null));
+    console.log(this);
 };
