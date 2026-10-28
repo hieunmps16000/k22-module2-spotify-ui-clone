@@ -20,9 +20,9 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/0c9b48e69b.js" crossorigin="anonymous"></script>
-  <script type="module" crossorigin src="/k22-module2-spotify-ui-clone/assets/index-D83MXYkb.js"></script>
-  <link rel="modulepreload" crossorigin href="/k22-module2-spotify-ui-clone/assets/responsive-BMA5YnkI.js">
-  <link rel="stylesheet" crossorigin href="/k22-module2-spotify-ui-clone/assets/responsive-DPXnHjTy.css">
+  <script type="module" crossorigin src="/k22-module2-spotify-ui-clone/assets/index-BKW5LGVH.js"></script>
+  <link rel="modulepreload" crossorigin href="/k22-module2-spotify-ui-clone/assets/responsive-BFMtGQ01.js">
+  <link rel="stylesheet" crossorigin href="/k22-module2-spotify-ui-clone/assets/responsive-CNcGYRjb.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
     <!-- Sign in/ sign up -->
     <div class="site-header__auth">
         <a href="./sign-up.html" class="sign-up__btn">Đăng ký</a>
-        <a href="./sign-in.html" class="sign-in__btn">Đăng nhập</a>
+        <a href="./sign-in.html" class="btn">Đăng nhập</a>
         <div class="site-header__user">H</div>
     </div>
 
@@ -72,7 +72,7 @@
     <div class="menu__sidebar" aria-hidden="false">
         <div class="site-header__auth">
             <a href="./sign-up.html" class="sign-up__btn">Đăng ký</a>
-            <a href="./sign-in.html" class="sign-in__btn">Đăng nhập</a>
+            <a href="./sign-in.html" class="btn">Đăng nhập</a>
             <div class="site-header__user">H</div>
         </div>
     </div>
@@ -106,14 +106,13 @@
     </section>
 </aside>
 
-            <main class="app-col app-list"><!-- Những bài hát thịnh hành -->
-<section id="trending-songs">
+            <main class="app-col app-list"><section id="trending-songs">
     <div class="container-fluid">
         <header class="section-heading-wrapper">
             <h2 class="section-heading">Những bài hát thịnh hành</h2>
         </header>
-        <div class="trending-tracks" aria-busy="true">
-            <div class="row row-cols-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2" data-home-trending-tracks>
+        <div class="trending-tracks">
+            <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2" data-home-trending-tracks aria-busy="true">
                 
                 <div class="col">
                     <div class="card card-skeleton">
@@ -320,14 +319,13 @@
     </div>
 </section>
 
-<!-- Nghệ sĩ phổ biến -->
 <section class="section-home">
     <div class="container-fluid">
         <header class="section-heading-wrapper">
             <h2 class="section-heading">Nghệ sĩ phổ biến</h2>
         </header>
         <div class="popular-artists">
-            <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2" data-home-popular-artists>
+            <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2" data-home-popular-artists aria-busy="true">
                 
                 <div class="col">
                     <article class="card card-skeleton">
@@ -414,14 +412,13 @@
     </div>
 </section>
 
-<!-- Album và đĩa đơn nổi tiếng -->
 <section class="section-home">
     <div class="container-fluid">
         <header class="section-heading-wrapper">
             <h2 class="section-heading">Album và đĩa đơn nổi tiếng</h2>
         </header>
         <div id="slidezy-albums">
-            <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2" data-home-famous-albums>
+            <div class="row row-cols-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2" data-home-famous-albums aria-busy="true">
                 
                 <div class="col">
                     <div class="card card-skeleton">
@@ -508,6 +505,14 @@
     </div>
 </section></main>
         </div>
+    </div>
+
+    <div class="subscribe-widget">
+        <div class="subscribe-widget__content">
+            <h2 class="subscribe-widget__title">Xem trước Spotify Clone</h2>
+            <p class="subscribe-widget__desc">Đăng ký để nghe không giới hạn các bài hát với không quảng cáo và không cần thẻ tín dụng.</p>
+        </div>
+        <a href="/sign-up.html" class="btn">Đăng ký miễn phí</a>
     </div>
 
     <!-- Scripts -->

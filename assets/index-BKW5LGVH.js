@@ -1,4 +1,4 @@
-import{n as e,t}from"./responsive-BMA5YnkI.js";var n,r,i,a,o=e((()=>{n=document.querySelector(`.menu__mobile-btn`),r=document.querySelector(`.menu__overlay`),i=document.querySelector(`.menu__sidebar`),a=()=>{n.addEventListener(`click`,()=>{r.classList.add(`open`),i.classList.add(`open`),n.setAttribute(`aria-pressed`,`true`),i.setAttribute(`aria-hidden`,`false`)}),r.addEventListener(`click`,()=>{r.classList.remove(`open`),i.classList.remove(`open`),n.setAttribute(`aria-pressed`,`false`),i.setAttribute(`aria-hidden`,`true`)})}})),s,c=e((()=>{s=`https://spotify.f8team.dev/api`})),l,u,d=e((()=>{c(),l=async(e,t={})=>{let n=await fetch(`${s}${e}`,{...t,headers:{"Content-Type":`application/json`,...t.headers}});if(!n.ok)throw Error(`Có lỗi xảy ra. Vui lòng thử lại!`);return n.json()},u=e=>l(e)})),f,p,m,h,g,_=e((()=>{d(),f=(e=``)=>String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#039;`),p=(e=[])=>{let t=document.querySelector(`[data-home-trending-tracks]`);t&&(t.innerHTML=e.map(e=>`
+import{n as e,t}from"./responsive-BFMtGQ01.js";var n,r,i,a,o=e((()=>{n=document.querySelector(`.menu__mobile-btn`),r=document.querySelector(`.menu__overlay`),i=document.querySelector(`.menu__sidebar`),a=()=>{n.addEventListener(`click`,()=>{r.classList.add(`open`),i.classList.add(`open`),n.setAttribute(`aria-pressed`,`true`),i.setAttribute(`aria-hidden`,`false`)}),r.addEventListener(`click`,()=>{r.classList.remove(`open`),i.classList.remove(`open`),n.setAttribute(`aria-pressed`,`false`),i.setAttribute(`aria-hidden`,`true`)})}})),s,c=e((()=>{s=`https://spotify.f8team.dev/api`})),l,u,d=e((()=>{c(),l=async(e,t={})=>{let n=await fetch(`${s}${e}`,{...t,headers:{"Content-Type":`application/json`,...t.headers}});if(!n.ok)throw Error(`Có lỗi xảy ra. Vui lòng thử lại!`);return n.json()},u=e=>l(e)})),f,p,m,h,g,_=e((()=>{d(),f=(e=``)=>String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#039;`),p=(e=[])=>{let t=document.querySelector(`[data-home-trending-tracks]`);t&&(t.innerHTML=e.map(e=>`
             <div class="col">
                 <article class="card">
                     <a class="card__img-wrap" href="#!">
@@ -40,7 +40,7 @@ import{n as e,t}from"./responsive-BMA5YnkI.js";var n,r,i,a,o=e((()=>{n=document.
                     </div>
                 </article>
             </div>
-        `).join(``))},h=e=>{let t=document.querySelector(`[data-home-famous-albums]`);t&&(console.log(e),t.innerHTML=e.map(e=>`
+        `).join(``),t.setAttribute(`aria-busy`,`false`))},h=e=>{let t=document.querySelector(`[data-home-famous-albums]`);t&&(t.innerHTML=e.map(e=>`
             <div class="col">
                 <article class="card">
                     <a class="card__img-wrap" href="#!">
@@ -59,4 +59,4 @@ import{n as e,t}from"./responsive-BMA5YnkI.js";var n,r,i,a,o=e((()=>{n=document.
                     </div>
                 </article>
             </div>
-        `).join(``))},g=async()=>{let{tracks:e}=await u(`/tracks/popular`),{artists:t}=await u(`/artists/trending`),{albums:n}=await u(`/albums/popular`);p(e),m(t),h(n)}}));t((()=>{o(),_(),(async()=>{a(),await g()})()}))();
+        `).join(``),t.setAttribute(`aria-busy`,`false`))},g=async()=>{let{tracks:e}=await u(`/tracks/popular`),{artists:t}=await u(`/artists/trending`),{albums:n}=await u(`/albums/popular`);p(e),m(t),h(n)}}));t((()=>{o(),_(),(async()=>{a(),await g()})()}))();
