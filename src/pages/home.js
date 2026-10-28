@@ -72,13 +72,12 @@ const renderPopularArtists = (artists) => {
         `;
         })
         .join("");
+    container.setAttribute("aria-busy", "false");
 };
 
 const renderFamousAlbums = (albums) => {
     const container = document.querySelector("[data-home-famous-albums]");
     if (!container) return;
-
-    console.log(albums);
 
     container.innerHTML = albums
         .map((album) => {
@@ -104,6 +103,7 @@ const renderFamousAlbums = (albums) => {
         `;
         })
         .join("");
+    container.setAttribute("aria-busy", "false");
 };
 
 const renderViewAllButton = (selector, link) => {
