@@ -64,14 +64,14 @@
         align-items: center;
         justify-content: center;
         margin-left: auto;
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 2rem;
+        height: 2rem;
         color: #b3b3b3
     }
 
     .menu__mobile-btn svg {
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
@@ -85,7 +85,7 @@
     }
 
     .app {
-        padding: 1rem;
+        padding: .625rem;
     }
 
     .app-col {
@@ -98,7 +98,7 @@
     }
 
     .section-heading {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
     .cards-list {
